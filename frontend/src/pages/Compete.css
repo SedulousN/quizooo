@@ -37,7 +37,8 @@
   .contest-link {
     display: inline-block;
     margin-top: 0.5rem;
-    padding: 0.6rem 1rem;
+    margin-left: 1rem;
+    padding: 0.6rem 1.1rem;
     background-color: #22d3ee; /* Primary button color */
     color: #1e1e2f; /* Button text color */
     text-decoration: none;
