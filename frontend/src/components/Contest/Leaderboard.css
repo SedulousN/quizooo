@@ -1,0 +1,60 @@
+/* Leaderboard Styling */
+.leaderboard-container {
+    padding: 2rem;
+    background-color: #1e293b; /* Dark background */
+    color: #f3f4f6; /* Light text */
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 60vh;
+  }
+  
+  .leaderboard-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #22d3ee; /* Cyan for title */
+  }
+  
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Fix column widths */
+  }
+  
+  .leaderboard-table th, .leaderboard-table td {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .leaderboard-table th {
+    background-color: #111827; /* Dark gray for header */
+    color: #22d3ee; /* Cyan for header text */
+  }
+  
+  .leaderboard-table td {
+    background-color: #1f2937; /* Slightly lighter dark background for rows */
+    color: #e5e7eb; /* Light gray for text */
+  }
+  
+  .leaderboard-table tr:nth-child(even) {
+    background-color: #111827; /* Alternate row colors */
+  }
+  
+  .leaderboard-table tr:hover {
+    background-color: #2d3748; /* Hover effect */
+  }
+  
+  .leaderboard-table td, .leaderboard-table th {
+    border: 1px solid #475569; /* Border around cells */
+  }
+  
+  @media (max-width: 768px) {
+    .leaderboard-title {
+      font-size: 1.5rem;
+    }
+    
+    .leaderboard-table th, .leaderboard-table td {
+      padding: 0.8rem;
+    }
+  }
+  

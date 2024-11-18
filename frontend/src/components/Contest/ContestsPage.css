@@ -1,0 +1,48 @@
+.contests-page {
+    padding: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .contest-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .contest-card {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .contest-card h4 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .contest-card p {
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+  
+  .contest-card button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .contest-card button:hover {
+    background-color: #0056b3;
+  }
+  

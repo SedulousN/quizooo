@@ -1,0 +1,78 @@
+/* Contests Page Styles */
+.contests-container {
+  padding: 4rem;
+  background-color: #1e293b; /* Dark blue-gray */
+  color: #f3f4f6; /* Light gray */
+  min-height: 80vh;
+  text-align: center;
+}
+
+.contests-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #22d3ee; /* Cyan */
+}
+
+.error {
+  color: #ef4444; /* Red for errors */
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.contest-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.contest-card {
+  background-color: #111827; /* Darker gray */
+  color: #f3f4f6;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.contest-card h4 {
+  font-size: 1.8rem;
+  color: #22d3ee; /* Cyan */
+  margin-bottom: 1rem;
+}
+
+.contest-card p {
+  font-size: 1rem;
+  color: #d1d5db; /* Softer light gray */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.contest-card button {
+  padding: 0.8rem 1.5rem;
+  background-color: #22d3ee; /* Cyan */
+  color: #111827; /* Darker gray */
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contest-card button:hover {
+  background-color: #0d4f6c; /* Darker cyan */
+  transform: translateY(-3px);
+}
+
+.contest-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contest-card p span {
+  font-weight: bold;
+  color: #e5e7eb; /* Light gray for emphasized text */
+}

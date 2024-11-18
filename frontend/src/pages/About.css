@@ -1,0 +1,61 @@
+/* General Styles */
+.about-container {
+    padding: 2rem;
+    background-color: #1e293b; /* Dark blue-gray */
+    color: #f3f4f6; /* Light gray */
+    min-height: 80vh;
+    text-align: center;
+  }
+  
+  /* Title Styles */
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #22d3ee; /* Cyan */
+  }
+  
+  /* Description Styles */
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0 auto 2rem auto;
+    max-width: 800px;
+    color: #d1d5db; /* Softer light gray */
+  }
+  
+  /* Features Section */
+  .about-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    background-color: #111827; /* Darker gray */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    color: #22d3ee; /* Cyan */
+    margin-bottom: 1rem;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #e5e7eb; /* Light gray */
+    line-height: 1.5;
+  }
+  
+  /* Hover Effects */
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
