@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -13,9 +12,12 @@ import Leaderboard from './components/Contest/Leaderboard';
 import Performance from './components/User/Performance';
 import AdminDashboard from './components/Admin/AdminDashboard';
 import Modal from './components/Modal/Modal'; // We'll create this component for pop-up modals.
-import './App.css'
+import Compete from './pages/Compete'; // Import Compete page
+import Practice from './pages/Practice'; // Import Practice page
+import Updates from './pages/Updates'; // Import Updates page
+import Resources from './pages/Resources'; // Import Resources page
+import './App.css';
 import Contests from './components/Contest/Contests';
-
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -43,12 +45,12 @@ const App = () => {
   return (
     <Router>
       <Navbar
-          isLoggedIn={isLoggedIn}
-          onLogout={handleLogout}
-          openModal={openModal}
-        />
+        isLoggedIn={isLoggedIn}
+        onLogout={handleLogout}
+        openModal={openModal}
+      />
       <Routes>
-      <Route
+        <Route
           path="/"
           element={<Home isLoggedIn={isLoggedIn} onLogout={handleLogout} openModal={openModal} />}
         />
@@ -61,6 +63,11 @@ const App = () => {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/performance" element={<Performance />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        {/* New Routes */}
+        <Route path="/compete" element={<Compete />} />
+        <Route path="/practice" element={<Practice />} />
+        <Route path="/updates" element={<Updates />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
       <Footer />
       {isModalOpen && (

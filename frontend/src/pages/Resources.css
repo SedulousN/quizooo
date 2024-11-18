@@ -1,0 +1,52 @@
+.resources-container {
+    padding: 2rem;
+    background-color: #1e1e2f; /* Match theme */
+    color: #ffffff;
+    min-height: calc(100vh - 100px); /* Keeps footer at the bottom */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #22d3ee; /* Highlight color */
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .resources-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resources-list li {
+    margin-bottom: 1.2rem;
+    background-color: #2a2a3d;
+    padding: 1rem;
+    border-radius: 6px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .resources-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .resource-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    background-color: #22d3ee;
+    color: #1e1e2f;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resource-link:hover {
+    background-color: #0d8ea2;
+  }
+  
